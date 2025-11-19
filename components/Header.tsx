@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { auth } from '../services/firebase';
@@ -37,8 +38,9 @@ const Header: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <Link to="/" className="text-2xl font-bold text-brand-red">
-                deva.pdf
+              <Link to="/" className="text-2xl font-bold flex items-baseline">
+                <span className="text-brand-red">Ziva</span>
+                <span className="text-dark-gray font-semibold text-xl">.pdf</span>
               </Link>
             </div>
             <div className="hidden md:flex items-center space-x-4">

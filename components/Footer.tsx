@@ -9,57 +9,22 @@ const Footer: React.FC = () => {
     <>
       <footer className="bg-footer-bg text-white">
         <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-          <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-            <div className="space-y-8 xl:col-span-1">
-              <h2 className="text-3xl font-bold text-white">deva.pdf</h2>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="space-y-4 text-center md:text-left">
+              <h2 className="text-3xl font-bold text-white">Ziva.pdf</h2>
               <p className="text-gray-300 text-base">Powered by dxxp</p>
-              <div className="flex space-x-6">
-                <a href="https://www.instagram.com/dxxp.inc" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+            </div>
+            
+            <div className="flex space-x-6">
+                <a href="https://www.instagram.com/dxxp.inc" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors duration-200">
                   <span className="sr-only">Instagram</span>
                   <InstagramIcon />
                 </a>
-              </div>
-            </div>
-            <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-              <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Solutions</h3>
-                  <ul className="mt-4 space-y-4">
-                    <li><a href="#" className="text-base text-gray-300 hover:text-white">Business</a></li>
-                    <li><a href="#" className="text-base text-gray-300 hover:text-white">Education</a></li>
-                    <li><a href="#" className="text-base text-gray-300 hover:text-white">Developers</a></li>
-                  </ul>
-                </div>
-                <div className="mt-12 md:mt-0">
-                  <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Company</h3>
-                  <ul className="mt-4 space-y-4">
-                    <li><a href="#" className="text-base text-gray-300 hover:text-white">Our Story</a></li>
-                    <li><a href="#" className="text-base text-gray-300 hover:text-white">Blog</a></li>
-                    <li><a href="#" className="text-base text-gray-300 hover:text-white">Press</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Support</h3>
-                  <ul className="mt-4 space-y-4">
-                    <li><a href="#" className="text-base text-gray-300 hover:text-white">Pricing</a></li>
-                    <li><a href="#" className="text-base text-gray-300 hover:text-white">Tools</a></li>
-                    <li><a href="#" className="text-base text-gray-300 hover:text-white">FAQ</a></li>
-                  </ul>
-                </div>
-                <div className="mt-12 md:mt-0">
-                  <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase">Legal</h3>
-                  <ul className="mt-4 space-y-4">
-                    <li><a href="#" className="text-base text-gray-300 hover:text-white">Privacy & Terms</a></li>
-                    <li><a href="#" className="text-base text-gray-300 hover:text-white">Cookie Policy</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
+          
           <div className="mt-12 border-t border-white/20 pt-8">
-            <p className="text-base text-gray-300 xl:text-center">&copy; 2024 deva.pdf. All Rights Reserved.</p>
+            <p className="text-base text-gray-300 text-center">&copy; {new Date().getFullYear()} Ziva.pdf. All Rights Reserved.</p>
           </div>
         </div>
       </footer>

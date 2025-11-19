@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { TOOLS } from '../constants/tools';
 import ToolCard from '../components/ToolCard';
 import { StarIcon } from '../constants/icons';
@@ -8,6 +9,10 @@ import ThankYouPopup from '../components/ThankYouPopup';
 const HomePage: React.FC = () => {
   const [isRatingModalOpen, setIsRatingModalOpen] = useState(false);
   const [showThankYouPopup, setShowThankYouPopup] = useState(false);
+
+  useEffect(() => {
+      document.title = "Ziva.pdf | Every PDF tool you need, in one place";
+  }, []);
 
   const handleRatingSubmit = () => {
     setIsRatingModalOpen(false);
@@ -73,7 +78,7 @@ const HomePage: React.FC = () => {
       <section className="bg-white py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-charcoal-text">Why choose deva.pdf?</h2>
+            <h2 className="text-3xl font-bold text-charcoal-text">Why choose Ziva.pdf?</h2>
             <p className="mt-4 text-lg text-gray-700">We simplify your document workflow.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-10">
